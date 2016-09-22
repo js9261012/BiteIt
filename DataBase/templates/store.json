@@ -1,0 +1,6 @@
+[
+ {% for store in stores %}
+    {"name": {{ store.name }}, "id": {{ store.id }} }
+    {% if not forloop.last %} , {% endif %}
+ {% endfor %}
+]
